@@ -1,4 +1,5 @@
-const API_KEY = "6e73dc1c080e4f76a60103802250204";
+require('dotenv').config();
+const API_KEY = process.env.API_KEY;    
 const cityLocation = "Paris";
 const URL = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${cityLocation}&aqi=yes`;
 
